@@ -1,0 +1,17 @@
+name: md2canvas
+channels:
+  - eoas_ubc
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - click
+  - jupyter
+  - git
+  - markdown-it-py<1.1
+  - jupytext
+  - pillow
+  - pip
+  - scipy
+  - matplotlib
+# conda-lock -f environment.yml -p linux-64
