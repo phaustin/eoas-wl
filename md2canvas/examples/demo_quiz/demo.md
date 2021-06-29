@@ -75,17 +75,17 @@ We are currently looking for alpha testers! If you see this as being useful for 
 
     And here is a screenshot of it in a Jupyter Notebook:
 
-    ![Q1](media/Q1_jn.png)
+    ![Q1](media/q1_jn.png)
     
     In general, there will be one question cell that contains all the info necessary to understand and solve the question. It will be followed by some answer cells. The first one will be parsed for answer data and must follow specific formatting. The following cells can be anything, so they can be used as descriptions of the answers or code cells for computation or anything really. All of these cells will be stripped by anstrip as long as they are tagged as answer cells in the metadata.
 
     When this question is part of a quiz that is pushed to Canvas, it looks like this for the student during the quiz:
 
-    ![Q1](media/Q1_cu.png)
+    ![Q1](media/q1_cu.png)
 
     And like this once the quiz has been graded:
 
-    ![Q1](media/Q1_cg.png)
+    ![Q1](media/q1_cg.png)
 
 
 3. Here is another example that is a matching question, notice that it sets an extra field in the metadata (points_possible) that changes the number of points the question is worth:
@@ -124,10 +124,10 @@ We are currently looking for alpha testers! If you see this as being useful for 
 
     The goal of this question is to find the matching words. For example, the first word in the left list (apple) appears in the fifth position in the right list. Because of this, the first value in the answer key is 5. Note also that there are some extra answers in the right list which act as distractors and do not have a pairing. In order for these questions to be parsed correctly, the length of the right list must be at least the length of the left list.
     ```
-    ![Q2](media/Q2_jn.png)
-    ![Q2](media/Q2_cu.png)
-    ![Q2](media/Q2_cu_options.png)
-    ![Q2](media/Q2_cg.png)
+    ![Q2](media/q2_jn.png)
+    ![Q2](media/q2_cu.png)
+    ![Q2](media/q2_cu_options.png)
+    ![Q2](media/q2_cg.png)
 
 4. This is a simpler type of question called a short answer question:
     ```
@@ -148,9 +148,9 @@ We are currently looking for alpha testers! If you see this as being useful for 
 
     The image included in this question is automatically updloaded to Canvas when md2canvas is run. This means that if you can see it when you preview the markdown or Jupyter Notebook, you will see it on Canvas as well.
     ```
-    ![Q3](media/Q3_jn.png)
-    ![Q2](media/Q3_cu.png)
-    ![Q2](media/Q3_cg.png)
+    ![Q3](media/q3_jn.png)
+    ![Q2](media/q3_cu.png)
+    ![Q2](media/q3_cg.png)
 
 5. Finally, this question shows off LaTeX:
     ~~~
@@ -180,9 +180,9 @@ We are currently looking for alpha testers! If you see this as being useful for 
     np.testing.assert_almost_equal(ans,6.383,decimals=3)
     ```
     ~~~
-    ![Q4](media/Q4_jn.png)
-    ![Q2](media/Q4_cu.png)
-    ![Q2](media/Q4_cg.png)
+    ![Q4](media/q4_jn.png)
+    ![Q2](media/q4_cu.png)
+    ![Q2](media/q4_cg.png)
 
     In the future, we envision that md2canvas will be able to compute the answers just based off the code cells.
 
