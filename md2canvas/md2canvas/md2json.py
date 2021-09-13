@@ -599,7 +599,7 @@ def parse_quiz(nb_file):
     elif nb_file.endswith(".ipynb"):
         jupytext(args=[str(nb_file), "--to", "md:myst"])
         nb_file = nb_file.replace(".ipynb", ".md")
-    nb_obj = jp.readf(nb_file)
+    nb_obj = jp.read(nb_file)
 
     quiz = {"attrs": {}, "groups": []}
 
